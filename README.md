@@ -3,3 +3,4 @@
 gihub actionsワークフローの挙動を確認する
 
 # 使用方法
+github actionsを実行して下さい
