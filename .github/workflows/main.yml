@@ -1,0 +1,17 @@
+name: Checkout nodejs_tutrial content
+
+on:
+  workflow_dispatch:
+
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout nodejs_tutrial
+        uses: actions/checkout@v2
+        with:
+          repository: watyanabe164/nodejs_tutrial
+          ref: main
+          path: nodejs_tutrial
+      - name: show current directory
+        run: ls -la
